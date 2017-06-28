@@ -8,14 +8,27 @@
 
 <body>
   <div ng-controller="DirectiveDemoAppController">
-    <h1 hello-user></h1>
+    <p>Enter name below:</p>
     <input type="text" name="name" ng-model="name">
-    <span>{{count}}</span>
+    <div>
+      <h1 hello-user></h1>
+    </div>
+    <div>
+      <span>Select Country</span>
+      <au-drop-down data="data.countries" display-val="label" ng-model="selectedCountry"></au-drop-down>
+      {{selectedCountry}}
+    </div>
+    <div>
+      <span>Select Currency</span>
+      <au-drop-down data="data.currencies" display-val="code" ng-model="selectedCurrency"></au-drop-down>
+      {{selectedCurrency}}
+    </div>
   </div>
   <script src="../node_modules/angular/angular.min.js"></script>
   <script src="../directives/app.module.js"></script>
   <script src="../directives/app.controller.js"></script>
   <script src="../directives/hello.directive.js"></script>
+  <script src="../directives/au-dropDown.directive.js"></script>
 </body>
 
 </html>
