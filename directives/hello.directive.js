@@ -3,7 +3,12 @@
 
 	directiveDemoApp.directive('helloUser',function(){
 		return {
-			template:'<span>Hello {{name}}</span>'
+			template:'<span ng-click="showDetails()">Hello {{name}}</span>',
+			controller: function($scope){
+				$scope.showDetails = function(){
+					alert("Student-AU 2017");
+				}
+			}
 		}
 	})
 })()

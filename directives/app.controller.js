@@ -1,5 +1,4 @@
-(function(){
-	var directiveDemoApp = angular.module('directiveDemoApp');
-	directiveDemoApp.controller('DirectiveDemoAppController',['$scope', function($scope){
-	}])
+(function() {
+  var directiveDemoApp = angular.module('directiveDemoApp');
+  directiveDemoApp.controller('DirectiveDemoAppController', ['$scope', function($scope) {}])
 })()
