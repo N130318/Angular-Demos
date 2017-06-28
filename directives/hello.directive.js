@@ -6,7 +6,7 @@
       template: '<span ng-click="showDetails()">Hello {{name}}</span>',
       controller: function($scope) {
         $scope.showDetails = function() {
-          alert("Student-AU 2017");
+          alert("Welcome to AU 2017");
         }
       },
       link: function(scope, elem, attrs) {
