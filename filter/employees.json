@@ -3,32 +3,38 @@
   "fName": "Jane",
   "age": "26",
   "salary": "10000",
-  "currencyCode": "SGD$"
+  "currencyCode": "SGD$",
+  "department": "hrDepartment"
 }, {
   "id": 2,
   "fName": "John",
   "age": "27",
   "salary": "80000.89",
-  "currencyCode": "USD$"
+  "currencyCode": "USD$",
+  "department": "adminDepartment"
 }, {
   "id": 3,
   "fName": "Nancy",
   "age": "35",
-  "salary": "5678900"
+  "salary": "5678900",
+  "department": "itDepartment"
 }, {
   "id": 4,
   "fName": "Veronica",
   "age": "43",
-  "salary": "999090"
+  "salary": "999090",
+  "department": "engineeringDepartment"
 }, {
   "id": 5,
   "fName": "Tina",
   "age": "60",
   "salary": "9997860",
-  "currencyCode": "SGD$"
+  "currencyCode": "SGD$",
+  "department": "adminDepartment"
 }, {
   "id": 6,
   "fName": "Wendi",
   "age": "56",
-  "salary": "999090"
+  "salary": "999090",
+  "department": "itDepartment"
 }]
