@@ -1,3 +1,3 @@
-(function () {
-    var directiveDemoApp = angular.module('directiveDemoApp', []);
+(function() {
+  angular.module('directiveDemoApp', []);
 })();
