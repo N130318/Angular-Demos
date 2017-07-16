@@ -1,3 +1,3 @@
-(function(){
-	var badPracticeApp = angular.module('badPracticeApp',[]);
+(function() {
+  angular.module('badPracticeApp', []);
 })()
