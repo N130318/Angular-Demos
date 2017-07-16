@@ -33,9 +33,9 @@
           <th>Department</th>
         </thead>
         <tbody>
-          <tr ng-repeat="employee in data.employeeList | filter:searchFilter | orderBy:'age'">
+          <tr ng-repeat="employee in data.employeeList | filter:searchFilter">
             <td>{{employee.id}}</td>
-            <td>{{employee.fName | uppercase}}</td>
+            <td>{{employee.fName}}</td>
             <td>{{employee.age}}</td>
             <td>{{employee.salary}}</td>
             <td>{{employee.department | humanReadable}}</td>
