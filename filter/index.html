@@ -17,6 +17,9 @@
   </nav>
   <div class="container">
     <div ng-controller="FilterDemoAppController">
+      <div class="pull-right">
+        <span>Today's Date : {{date | date: 'yyyy-MM-dd'}}</span>
+      </div>
       <div class="input-group form-group col-md-6">
         <input type="text" class="form-control" placeholder="Search for..." ng-model="searchFilter">
         <span class="input-group-btn">
@@ -35,7 +38,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr ng-repeat="employee in data.employeeList | filter:searchFilter">
+          <tr ng-repeat="employee in data.employeeList | filter:searchFilter | orderBy:'age'">
             <td>{{employee.id}}</td>
             <td>{{employee.fName}}</td>
             <td>{{employee.age}}</td>
