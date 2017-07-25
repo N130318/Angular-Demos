@@ -10,8 +10,20 @@ promiseApp.config(function($routeProvider, $locationProvider) {
       controller: "Demo2Controller",
       controllerAs: "vm"
     })
+    .when("/demo3", {
+      templateUrl: "promises/promise-demo3.html",
+      controller: "Demo3Controller",
+      resolve: {
+        requiredData: function($http) {
+          return $http.get('../promises/employees.json');
+        }
+      }
+    })
+    .when("/demo4", {
+      templateUrl: "promises/promise-demo4.html",
+      controller: "Demo4Controller"
+    })
     .otherwise({
       redirectTo: "/"
     });
-  //$locationProvider.html5Mode(true);
 });

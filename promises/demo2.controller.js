@@ -1,6 +1,6 @@
 (function() {
   var promiseApp = angular.module('promiseApp');
-  promiseApp.controller('Demo2Controller', ['$scope', '$timeout', '$q', '$location', function($scope, $timeout, $q, $location) {
+  promiseApp.controller('Demo2Controller', ['$scope', '$timeout', '$q', function($scope, $timeout, $q) {
     $scope.number1 = 0;
     $scope.number2 = 0;
 
